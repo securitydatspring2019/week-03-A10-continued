@@ -63,6 +63,8 @@ To start a shell with an environment variable set and a program:
 $ env LOG_PATH=$HOME/mylogfile.txt java -jar logger.jar
 ```
 
+To start the program in a separate process look [here](https://www.maketecheasier.com/run-bash-commands-background-linux/)
+
 ### Common Environmental and Shell Variables
 
 Some environmental and shell variables are very useful and are referenced fairly often.
