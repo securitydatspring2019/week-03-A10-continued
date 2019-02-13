@@ -58,7 +58,10 @@ or just
 $ export OTHER_VAR="Another var"
 ```
 
-
+To start a shell with an environment variable set and a program:
+```bash
+$ env LOG_PATH=$HOME/mylogfile.txt java -jar logger.jar
+```
 
 ### Common Environmental and Shell Variables
 
