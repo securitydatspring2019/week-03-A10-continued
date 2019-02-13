@@ -58,6 +58,8 @@ or just
 $ export OTHER_VAR="Another var"
 ```
 
+
+
 ### Common Environmental and Shell Variables
 
 Some environmental and shell variables are very useful and are referenced fairly often.
@@ -92,6 +94,15 @@ There is a minimal logger system at:
 https://github.com/securitydatspring2019/week-03-logger
 You need to compile it, copy the jar file to a droplet, and run the jar file (you will be asked to install some Java).
 In addition, the environment variable `LOG_PATH` must be set for the program to work.
+
+To copy a file via ssh:
+```bash
+$ scp <file> <username>@<IP address or hostname>:<Destination>
+```
+Example:
+```bash
+$ scp logger.jar aka@200.199.198.197:logger.jar
+```
 
 We will next make a different droplet where we will see if anyone logs in. I call this system “HoneyPot”.
 The idea is that we will make  a user on HoneyPot, with a username of `test`, and password: `123456` (see https://en.wikipedia.org/wiki/List_of_the_most_common_passwords).
