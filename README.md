@@ -123,6 +123,15 @@ What does `curl` do in the first place
 What is the `-G` option, and what is the strange option at the end
 Can we omit any of the flags?
 
+To run the command at any login, either add it to the
+```
+/etc/profile
+```
+script, or even better add a script ending in `.sh` to the `profile.d` directory, eg.:
+
+```
+/etc/profile.d/logger.sh
+```
 
 Micro cheatsheet for making a new user on ubunto for our purpose:
 
@@ -151,3 +160,7 @@ $ pkill -u johndoe
 ```
 
 That stops all processes - also johndoe’s interactive bash
+
+## Exam questions
+
+see [week-01-intro-A10](https://github.com/securitydatspring2019/week-01-intro-A10)
