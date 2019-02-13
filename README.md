@@ -11,12 +11,12 @@ Basically the environment provides a medium through which the shell process can 
 
 The environment is implemented as strings that represent key-value pairs. If multiple values are passed, they are typically separated by colon (:) characters. Each pair will generally look something like this:
 
-```bash
+``` bash
 KEY=value1:value2:...
 ```
 If the value contains significant white-space, quotations are used:
 
-```bash
+``` bash
 KEY="value with spaces"
 ```
 
